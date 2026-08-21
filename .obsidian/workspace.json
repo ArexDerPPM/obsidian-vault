@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PRODUCTOS/API/Consumo API.md",
+                "file": "PRODUCTOS/Acciones y Consultas/Reverso.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Consumo API"
+              "title": "Reverso"
             }
           }
         ]
@@ -183,11 +183,13 @@
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
-      "graph:Abrir vista gráfica": false
+      "graph:Abrir vista gráfica": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "ca8d083537fd655e",
   "lastOpenFiles": [
+    "PRODUCTOS/API/Consumo API.md",
     "PRODUCTOS/Acciones y Consultas/Cancelación de Sesión.md",
     "Sin título 1.md",
     "PRODUCTOS/API/API.md",
@@ -207,7 +209,6 @@
     "Recursos/assets/Pasted image 20260821101721.png",
     "Recursos/assets/Pasted image 20260821101706.png",
     "Recursos/assets/Pasted image 20260821101701.png",
-    "PRODUCTOS/API/Consumo API.md",
     "Recursos/assets/Pasted image 20260820105703.png",
     "Recursos/assets/Pasted image 20260820105024.png",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
