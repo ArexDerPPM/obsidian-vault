@@ -48,5 +48,60 @@ aqui es donde se rompe el codigo del comercio, dado el nivel de mensajeria ya qu
 Aqui es necesrio un cobro minimo de 1$ y se reversa.
 ![[Pasted image 20260821102040.png]]
 
-Se jace la validacion por el otp o 3ds, este seria el flujo ideal para una tokenizacion.
+Se hace la validación por el otp o 3ds, este seria el flujo ideal para una tokenizacion.
+
+Aqui todo lo valida desde la suscripcion sin el monto: 
+![[Pasted image 20260824084735.png]]
+
+aqui en donde el objeto suscription sellava toda la trazabilidad
+
+--------
+Otro flujo es  mostrar las cuotas: 
+![[Pasted image 20260824084815.png]]
+
+Si o si debo enviar el payment y usar el information 
+![[Pasted image 20260824084927.png]]
+
+Eso lo hago para ver las cuota, aqui lo puedo hacer mediante  una suscripcion  (MANTENER LA MISMA REFERENCIA)
+![[Pasted image 20260824085106.png]]
+
+Resulta que a nivel de flujo  tenemos varias formas de ocuparlo Con el otp generado -(lo estamos haciendo como suscripcion)
+
+otp generate (simpre en los flujos de pago de suscripción el otp nunca se valida bajo el OTP validate, sino bajo el tokenize de 3ds, cumple la funcion de validar la seguridad de la tarjeta), esto nos va decir si es correcta o no .
+
+ -----------
+Como identificamos una transaccion de tokenizacion 
+![[Pasted image 20260824092659.png]]
+Este atributo a nivel de pago es un tokenizationID con la cual podemos ver su se envio el cvv o no 
+como se envio me da una Y 
+
+CON CVV
+![[Pasted image 20260824092821.png]]
+
+
+SIN CVV
+![[Pasted image 20260824092808.png]]
+
+------
+AHORA PARA UN FLUJO DE 3DS en el caso de FYBECCA lo podemos hacer con el information con el payment, o si no es necesario als cuotas las hacemos solo con el suscripcion.
+
+Desde P2P recomendamos que el flujo de pago se haga con una transaccion de 3DS NPA (No payment  Autenticacion)
+
+importante: esto tiene un gran indice de DECLINACION, dado que los bancos  restringen esto.
+Lo que debemos hacer es enviar como un flujo normal con un monto.
+![[Pasted image 20260824093145.png]]
+
+
+luego que el usuario se autentica seguimos la trasabilidad y srguimos el flujo 
+
+![[Pasted image 20260824093938.png]]
+
+
+en el payment debemos enviar el dispersión para ver quien es el responsable de la autenticación de 3DS.
+
+.... RECOMENDACION LOS EJEMPLOS DE LA COLECCION DE POSTMAN  estan mas centralizados para un mejor entendimiento de los comercios.
+
+
+
+
 
