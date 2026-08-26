@@ -48,9 +48,21 @@
               "icon": "lucide-file",
               "title": "Sitios de DLOCAL"
             }
+          },
+          {
+            "id": "5ba0cc2798550a93",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Checklist_WC_pago_basico_2026"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -109,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 924.652172088623
+    "width": 321.1603202819824
   },
   "right": {
     "id": "c926d80319570928",
@@ -195,14 +207,23 @@
               "icon": "lucide-list",
               "title": "Esquema de Clasificación CMS"
             }
+          },
+          {
+            "id": "e3f7b42cddeab88e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 358.5,
-    "collapsed": true
+    "width": 358.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,10 +237,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "82b32b4da2722500",
+  "active": "5ba0cc2798550a93",
   "lastOpenFiles": [
-    "TIPOS DE PRODUCTOS.md",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
+    "latam caso.md",
+    "Recursos/assets/Pasted image 20260825151949.png",
+    "Recursos/assets/Pasted image 20260825151910.png",
+    "Recursos/assets/Pasted image 20260825151755.png",
     "Sitios de DLOCAL.md",
+    "TIPOS DE PRODUCTOS.md",
     "PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API.md",
     "Recursos/assets/Pasted image 20260824105431.png",
     "Recursos/assets/Pasted image 20260824104835.png",
@@ -230,15 +256,11 @@
     "Recursos/assets/Pasted image 20260824102528.png",
     "Sin título.base",
     "PRODUCTOS/API/API Consumo caso Fybecca.md",
-    "Recursos/assets/Pasted image 20260824093938.png",
-    "Recursos/assets/Pasted image 20260824093145.png",
-    "Recursos/assets/Pasted image 20260824092821.png",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
     "PRODUCTOS/API/Consumo API.md",
     "PRODUCTOS/Acciones y Consultas/Cancelación de Sesión.md",
     "Sin título 1.md",
     "PRODUCTOS/API/API.md",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/Acciones y Consultas/Reportería.md",
     "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "Lista de Contenido.base",
@@ -262,8 +284,6 @@
     "PRODUCTOS/PREAUTORIZACIONES",
     "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "PRODUCTOS/CMS/Cerrados/Shopify.md",
-    "Recursos/Tarjetas de Prueba.md",
-    "Recursos/Enlaces Útiles.md",
     "PRODUCTOS/PAGO ONCLICK",
     "Recursos/documentos",
     "PRODUCTOS/CMS/Cerrados"
