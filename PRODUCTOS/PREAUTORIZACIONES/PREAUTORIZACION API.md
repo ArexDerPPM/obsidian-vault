@@ -1,63 +1,105 @@
+# 🔐 Preautorización API — Flujo Técnico
+
+> [!INFO] Notas de sesión
+> Notas técnicas sobre el flujo de preautorización a nivel de API: retención de fondos, decrementos, 3DS y OTP.
+
+> **Relacionado:** [[PRODUCTOS/Suscripción/Preautorización|Preautorización]], [[PRODUCTOS/PREAUTORIZACIONES/Reautorizaciones|Reautorizaciones]]
+
+---
+
+## 🔑 Concepto
+
+Una **API de preautorización** nos permite **retener o reservar dinero** y siempre va a tener una **fecha de corte** (generalmente **30 días**). Si se supera este plazo, se libera el cupo.
 
 ![[Pasted image 20260824102528.png]]
 
-Este diagrama nos funciona mas como un flujo de diagrama 
+---
 
-una API PREAUTORIZACION -> Nos permite retener o reservar dinero y siempre va a tener una fecha de corte. Pero es mas una fecha en donde se libera el cupo, suele durar entre 30 días y si se supera este plazo se libera el cupo.
+## 📋 Caso Especial — Red Interdin
 
+| Aspecto | Detalle |
+|---------|---------|
+| **Incrementos** | Hasta **6 veces** de aumento |
+| **Decrementos** | **N-** a infinitos |
+| **Monto cero** | Una reautorización de monto **CERO** no se puede |
 
-Preautorizacion se aplica bajo lo mismo 
+---
 
-CASO DE LA RED INTERDIN
-Incrementos en INTERDIN. tenemos hasta 6 veces de aumento.
-En Decrementos son N- a infinitos 
-
-Una reautorizacion de monto CERO (0) no se puede.
-
-
-VAMOS A HACER EJERCICIOS DE FLUJO 
+## 🔄 Ejercicios de Flujo
 
 ![[Pasted image 20260824103646.png]]
 
 ![[Pasted image 20260824103832.png]]
 
-Todas las transaccion des  reautorizacion quedan en pendente hasta que se temrine el flujo o expire los 30 dias y se cancela 
+> [!WARNING]
+> Todas las transacciones de reautorización quedan en **PENDIENTE** hasta que se termine el flujo o expiren los 30 días y se cancelen.
 
 ![[Pasted image 20260824103858.png]]
 
-En las preautorizacion de 3ds tiene cobertura solo al monto inicial y si se aumenta el valor ya no tiene cobertura el excedente.
+---
 
-es decri : INICIAL : 100 
-reautorizacion : 130. --> los 30$ ya no tiene cobertura de un contracargo.
+## 🔐 3DS y Cobertura
 
-una variacion de los montos de CAVV --> Es un dato sensible hace relacion directa a 3DS. 
+> [!IMPORTANT]
+> En preautorizaciones de 3DS, la **cobertura** es solo al monto inicial. Si se aumenta el valor, el excedente **no tiene cobertura**.
 
-y el CVV -> hace relacion al plastico mismo de la tarjeta.
+**Ejemplo:**
+- Inicial: **$100**
+- Reautorización: **$130**
+- Los **$30** adicionales no tienen cobertura de contracargo
+
+---
+
+## 🔑 CAVV vs CVV
+
+| Concepto | Relación |
+|----------|----------|
+| **CAVV** | Dato sensible que hace relación directa a **3DS** |
+| **CVV** | Hace relación al **plástico** mismo de la tarjeta |
+
 ![[Pasted image 20260824104602.png]]
 
 ![[Pasted image 20260824104835.png]]
 
-Para las validaciones de contrato se valide la referencia, referencia interna que sea justamente del pago, y en dispersion o recurrencia.
+---
 
- EN OTP funciona igual 
- y vemos el flujo de postman 
- ![[Pasted image 20260824105431.png]]
+## 🔄 Flujo OTP
 
+Para las validaciones de contrato, se valida:
+- **Referencia** — referencia interna que sea justamente del pago
+- En **dispersión** o **recurrencia**
 
-SOLO PREAUTORIZACION POR INTERDIN,  MEDIANET esta por desarrollo... tenerlo en cuenta.
+El OTP funciona igual que el 3DS:
 
-Importante cuando ya van a salir a producción, las nicas tarjetas que estan habilitadas en red INTERDIN para PREAUTORIZACIONS son las TARJETAS DE CREDITO y el banco esta en gestión de validar las de debito.
+![[Pasted image 20260824105431.png]]
 
+---
 
-!!IMPORTANTE!!
-en 3DS  no soportan contracargos 
-cuando es OTP  es mas que si acepten contracargos en caso de fraudes.
+## ⚠️ Restricciones de Red
 
+> [!WARNING]
+> - **Solo preautorización por Interdin** — Medianet está en desarrollo
+> - En producción, las únicas tarjetas habilitadas en red Interdin para preautorizaciones son las de **CRÉDITO**
+> - El banco está en gestión de validar las de **débito**
 
------ 
-Funciona si en el CHECKOUT sin pasar  la reautorizacion pero no todos los bancos lo soportan , otros si o si necesitan pasar por la reautorizacion  y luego el checkout
+> [!IMPORTANT]
+> - En **3DS** NO soportan contracargos
+> - En **OTP** sí aceptan contracargos en caso de fraudes
 
+---
 
+## 🔄 Checkout sin Reautorización
 
+Funciona si en el checkout **sin pasar** la reautorización, pero no todos los bancos lo soportan. Otros necesitan pasar por la reautorización y luego el checkout.
 
+---
 
+## 🔗 Documentación Relacionada
+
+| Documento | Enlace |
+|-----------|--------|
+| Preautorización | [[PRODUCTOS/Suscripción/Preautorización]] |
+| Reautorizaciones | [[PRODUCTOS/PREAUTORIZACIONES/Reautorizaciones]] |
+| Reverso | [[PRODUCTOS/Acciones y Consultas/Reverso]] |
+| API principal | [[PRODUCTOS/API/API]] |
+| Autenticación | [[Autenticación]] |

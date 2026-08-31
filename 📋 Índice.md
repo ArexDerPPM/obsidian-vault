@@ -18,8 +18,11 @@
 | **Suscripción**     | Pagos recurrentes con tokenización de tarjeta                 | [[PRODUCTOS/Suscripción/Suscripción\|Ver más]]     |
 | **Diferido**        | Modalidad de pago diferido en suscripciones                   | [[PRODUCTOS/Suscripción/Diferido\|Ver más]]        |
 | **Preautorización** | Reserva de fondos antes del cobro final                       | [[PRODUCTOS/Suscripción/Preautorización\|Ver más]] |
+| **Preautorización API** | Flujo técnico de preautorización a nivel API | [[PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API\|Ver más]] |
 | **Dispersión**      | Distribución de pagos a múltiples destinatarios               | [[PRODUCTOS/Dispersión/Dispersión\|Ver más]]       |
-| **Dispersión 1**    | Notas de flujo y tipos de dispersión en Ecuador               | [[DISPERSIÓN _1\|Ver más]]     |
+| **Modificadores de Pago** | Configuración de tarifas en dispersión de merchants | [[PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO\|Ver más]] |
+| **Aerolíneas** | Dispersión de aerolíneas con IATA | [[PRODUCTOS/Dispersión/DISPERSION AEROLINEAS\|Ver más]] |
+| **Dispersión 1**    | Notas de flujo y tipos de dispersión en Ecuador               | [[PRODUCTOS/Dispersión/DISPERSIÓN _1\|Ver más]]     |
 | **Reautorizaciones**| Reautorización de preautorizaciones (incrementos/liberación)  | [[PRODUCTOS/PREAUTORIZACIONES/Reautorizaciones\|Ver más]] |
 | **Pago On click**   | Pago con tarjeta guardada (wallet) en un solo clic            | [[PRODUCTOS/PAGO ONCLICK/Pago On click\|Ver más]]  |
 
@@ -58,6 +61,9 @@
 
 | Tema | Descripción | Enlace |
 |------|-------------|--------|
+| **API Principal** | Integración avanzada con todos los métodos | [[PRODUCTOS/API/API\|Ver más]] |
+| **Consumo API** | Ejemplos de flujo y consumos | [[PRODUCTOS/API/Consumo API\|Ver más]] |
+| **Caso Fybecca** | Caso de estudio de integración API | [[PRODUCTOS/API/API Consumo caso Fybecca\|Ver más]] |
 | **Autenticación** | Login, TranKey, Seed, Nonce para consumir la API | [[Autenticación\|Ver más]] |
 | **3DS** | Autenticación 3D Secure para mayor seguridad | [[Autenticación#3D Secure (3DS)\|Ver más]] |
 | **OTP** | One-Time Password para validación de transacciones | [[Autenticación#OTP (One-Time Password)\|Ver más]] |
@@ -86,7 +92,17 @@
 
 | Tema | Descripción | Enlace |
 |------|-------------|--------|
-| **Link de Pagos** | Capacitación técnica del Link de Pagos (JV) | [[LINK DE PAGOS AUTOMATIZAZOS\|Ver más]] |
+| **Link de Pagos** | Capacitación técnica del Link de Pagos (JV) | [[PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS\|Ver más]] |
+
+---
+
+## 📋 Casos Especiales y Notas
+
+| Caso | Descripción | Enlace |
+|------|-------------|--------|
+| **LATAM / Sabre** | Caso de installment y forwarding a Banco Internacional | [[latam caso\|Ver más]] |
+| **Sitios DLOCAL** | Listado de comercios asociados a DLOCAL | [[Sitios de DLOCAL\|Ver más]] |
+| **Tipos de Productos** | Tiempos de integración por producto y CMS | [[TIPOS DE PRODUCTOS\|Ver más]] |
 
 ---
 

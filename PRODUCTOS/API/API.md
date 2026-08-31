@@ -1,105 +1,122 @@
-Dentro del contexto de esta integracion es la mas compleja en Ecuador dado qeu se consumen una gran cantidad de metodos, y se debe seguir una linea de puntos se deben cumplir sino la integración queda mal.
+# 🔌 API — Integración Avanzada
 
-A si nivel exisite tambien una certificación del banco, ya que se pasan por dos revisiones
+> [!IMPORTANT] Requisito: Autenticación
+> Para consumir la API es **obligatorio** autenticarse con **Login** y **SecretKey**.
+> → [[Autenticación|Ver documentación completa de Autenticación]]
 
-Todos los comercios certificados por API , deben ser PCI sino no se pueden certificar. (cualquier nivel es aceptado)
+> [!WARNING] Integración más compleja
+> La integración por **API** es la más compleja en Ecuador dado que se consumen una gran cantidad de métodos y se debe seguir una línea de puntos que deben cumplirse, sino la integración queda mal.
 
-Los costos de esta integración son muy altos y algunos comercios ya no o quieren realizar aveces
+---
 
-Importnate que los request tengan la misma trazabilidad, a nivel de los consumos.
+## 📋 Características Principales
 
-PEDIR EL DIAGRAMA DE API 
-Mpi/lookup el query, process , entre otros como reversos.
+- **Certificación del banco**: Se pasan por dos revisiones
+- **PCI obligatorio**: Todos los comercios certificados por API deben ser PCI (cualquier nivel es aceptado)
+- **Costos altos**: Algunos comercios no quieren realizar esta integración por el costo
+- **Trazabilidad**: Los request deben tener la misma trazabilidad a nivel de consumos
+- **Responsabilidad del flujo**: El comercio hace el recaudo y tiene la responsabilidad del flujo
 
-Esta integracion permite que el comercio haga el recaudo y el comercio tiene la responsabilidad del flujo.
+> [!WARNING] Referencia constante
+> Si en el `information` se mantiene una referencia, esa se debe mantener en el resto de consumos. **NO** se debe cambiar el monto (ej: de $10 a $50) porque da un mal servicio al comercio.
 
-Que si en el information mande una referencia esa la debo mantener en el resto de consumos 
+---
 
-ejemplo de 10$ en el otro paso a 50$ ESO NO SE DEBE HACER porque da un mal servicio a nivel del comercio.
+## 🔑 Conceptos Clave
 
-Toda ese flujo desde el information hasta el process sea un flujo correcto y no existan cambios en las tramas
+| Concepto | Descripción |
+|----------|-------------|
+| **Payer** | El pagador, dueño de la tarjeta |
+| **Buyer** | El dueño de la cuenta |
+| **Information** | Primer paso: consulta de tipos de crédito, 3DS, OTP, intereses, CVV |
+| **Process** | Proceso de la transacción |
+| **OTP** | One-Time Password para validación |
+| **3DS** | 3-Domain Secure para autenticación |
+| **Luhn** | Algoritmo para validar si una tarjeta es verdadera (booleano) |
 
-Debemos decirle a los comercios que se verificaran los logs de su flujo
+---
 
-Si hace mal un flujo de OTP, es decir  no va a funcionar en producción, todo afecta al flujo transaccional
+## 🔄 Flujo Básico de API
 
-![[Pasted image 20260819102237.png]]
+### 1. Information Request
+Consulta los tipos de crédito y si se requiere:
+- 3DS / OTP
+- Intereses
+- CVV (siempre requerido en Ecuador)
 
-EJEMPLO ALGUNOS COMERCIOS COMO FYBECCA
-en el mismo boton tienen la opcion de guardar la tarjeta para que e mantenga la misma experienca de usuario y se identificara los flujos que se pueden dar.
+### 2. Proceso según resultado
 
+| Requiere | Acción |
+|----------|--------|
+| **3DS** | Se levanta el desafío de autenticación |
+| **OTP** | Se genera el OTP para validación |
+| **Intereses** | Se calculan los intereses (solo Diners) |
+| **Ninguno** | Se procede directo al process |
 
+> [!NOTE]
+> Si requiere **3DS**, no va a requerir **OTP** — es una u otra.
 
-SI ES POR PAGO BASICO
-Entonces vamos a tener todos los metodos de api, PERO NO TENEMOS EL TOKENAIS
-	Usuario llena la info de la tarjeta
-		El usurio debe tener su validación de la tarjeta, implementanto el algoritmo de LUM el cual permite validar si la tarjeta es verdadera o no .
-		Fubnciona como un booleano
-		Se debe hacer una validacion de la tarjeta (dado que el CVV en amex 4 digitos, minimo 3 digitos)
+### 3. Process
+Se envía la firma al `process` para completar la transacción. Sin la firma es una transacción no segura y se declina.
 
-Lo mas importante aqui en API, es el "pagador" --> PAYER  
-Buyer : dueño de la cuenta
-Payer: el pagador dueño de la tarjeta
+---
 
-1.- Vamos a hacer un informationRequest vamos a ver los tipos de credito y si se requiere 3ds, otp, intereses y se requiere el CVV, es rara la tarjeta que no. (en eCUADOR TODAS REQUEREN CVV)
+## 📸 Ejemplo Visual — Flujo Completo
 
-
-Todas las tarjetas propias de dINERS ESAS PIDEN INTERESES, EL OTP es de Dinners y van a solicitar OTP, para 3ds es un servicio mas general (es global)
-
-el flujo de3DS
-el OTP: 
-intereses
-cvv siempre true
+### Flujo con 3DS
 ![[Pasted image 20260819103439.png]]
 
-en esta foto es y pasa por 3DS
-Si requiere 3DS no va  requerir OTP , o es una  u Otra
-A continuacion otro ejemplo: 
-![[Pasted image 20260819103726.png]]
-y ahora vamos al siguiente paso que es intereses seria el segundo metodo
+### Cálculo de intereses
 ![[Pasted image 20260819103903.png]]
 
-luego ya pasamos al OTP generate
-Y en forwardin8LUEGO LO VEMOS 
+### OTP Generate → Process
 ![[Pasted image 20260819104149.png]]
 
 ![[Pasted image 20260819104245.png]]
+
 ![[Pasted image 20260819104252.png]]
 
-Y SE COMPLETA LA TRANSACCION
+### Transacción completada
+Verificar en dashboard → Reglas Hours para confirmar que la validación fue exitosa.
 
-a nivel de dash debemos ver en Reglas hours podemos ver si la validacion fue exitosa 
+---
 
+## ⚠️ Casos Especiales
 
-Muy imprtante la trasabilidad, solo un cambio de un numero tengo un signature muy distinto al , la transaccion declina por que la transaccion se vincula a la referencia de pago, y si es distinto falla 
+### DEUNA
+- DEUNA es un medio de pago que **no funciona sin la descripción de pago**
+- La información del **payer** es esencial porque es quien va al final de cuentas (dueño de la tarjeta)
+- Se debe enviar la **IP del tarjetahabiente** y el **userAgent** según documentación
+
+### Intereses (Diners)
+- Solo aplica para tarjetas **Diners**
+- En otras redes **NO** se habilitan
+- A nivel **Interdin** sí está habilitado
+- Al tercer intento el banco bloquea y se debe hacer el flujo nuevamente
+
+### IFRAME
+- Si se levanta en un IFRAME, verificar las políticas de **CSP** (Content Security Policy)
+- No deben ser tan deliberadamente bloqueantes
+- Compartir la documentación de [[PRODUCTOS/Pago Único/Lightbox|Lightbox]]
+
+---
+
+## 🔗 Trazabilidad
+
+> [!WARNING] MUY IMPORTANTE
+> Un solo cambio de un número genera un **signature** muy distinto. La transacción declina porque se vincula a la referencia de pago, y si es distinto falla.
+
 ![[Pasted image 20260819104616.png]]
 
-Lo mismo va a nivel de 3DS 
+---
 
-	.... PEDIR DOCUMNTACION DE API por el tema del comercio de DLOCAL necesitan ver temas de sus transacciones y ams info del proceso api
+## 📚 Documentación Relacionada
 
-
-DEUNA es un medio de pago que no funciona sin la descripcion de pago para este caso, 
-la informacion del payer ES ESCENCIAL porque es quien aoga al final de cuntas , es el dueño de la tarjeta
-
-Se debe mandar la IP del tarjetaviente y del userAgent y se debe enviar lo que esta en la documentación.
-
-En el interes es importante para hacer el cobro 
-![[Pasted image 20260819105233.png]]
-
-este solo para diners,  
-EN  CAMBIO EN LAS OTRAS REDES NO SE VAN A HABILITAR, pero a ivel interdin si esta habilitado
-
-al tercer intento el banco me bloquea y debo hacer el flujo nuevamente.
-Aqui descripcion es opcional en API
-
-Si se levanta en un IFRAME ver el tema de las politicas de CSP, no deben de ser tan deliberadamente bloqueantes y compartir la documentacion de ligthbox
-
-
-/// revisar 
-cuando es query 
-debo enviar el query, debo redireccionar revisar lo final
-
-![[Pasted image 20260819110653.png]]
-
-DE QUI EL INTERES ES LO MISMO QUE OTP,
+| Documento | Enlace |
+|-----------|--------|
+| Consumo de API (ejemplos) | [[PRODUCTOS/API/Consumo API]] |
+| Caso Fybecca | [[PRODUCTOS/API/API Consumo caso Fybecca]] |
+| Autenticación | [[Autenticación]] |
+| Webhook | [[General/Webhook]] |
+| Sonda | [[General/Sonda]] |
+| Documentación oficial | [docs.placetopay.dev](https://docs.placetopay.dev/) |

@@ -1,21 +1,53 @@
+# ✈️ Caso LATAM — Sabre y Forwarding a Banco Internacional
 
-Latam tiene Sabre , y siempre el instalment lo va a colocar 1, y pra red datafast, autro, medianet es 1 ,
+> [!INFO] Caso Especial
+> Notas del caso particular de **LATAM** con **Sabre** y **Red Datafast/Austro/Medianet**. Manejo especial del campo `installment`.
 
-pero como Sabre manda 1 el installment, entonces se hizo un cambio den P2P y se hace una conversion de 1=== 0 para que no se rompa el flujo 
+---
 
-LATAM con banco internacional, 
+## 🔑 Problema
 
-LATAM. esta haciendo el proceso como siempre lo maneja pero va a hacer FORWARDING a banco internacional.
+**LATAM** utiliza **Sabre** como sistema de reservas, y este siempre envía `installment = 1`.
 
-EJERCICIO VISUAL. revisar este archivo :
+Para las redes **Datafast**, **Austro** y **Medianet**, el valor correcto de `installment` debería ser **0** (pago único, sin cuotas).
 
-![[Pasted image 20260825151755.png]]
+---
 
-y esto esl oqeu deberia enviar como tal 
+## 🔄 Solución Implementada
 
-![[Pasted image 20260825151910.png]]
+Se realizó un cambio en **PlacetoPay (P2P)** para hacer una **conversión**:
 
+| Valor Recibido | Valor Convertido | Significado |
+|----------------|------------------|-------------|
+| `installment = 1` | `installment = 0` | Pago único (sin cuotas) |
 
-y asi enviaria LATAM. en teoria: 
-![[Pasted image 20260825151949.png]]
------
+> [!WARNING]
+> Esta conversión evita que se rompa el flujo de pago. Sin ella, el sistema interpretaría el pago como una cuota de un plan de financiamiento.
+
+---
+
+## 🔗 Forwarding a Banco Internacional
+
+**LATAM** realiza el proceso como siempre lo maneja, pero hace **FORWARDING** a **Banco Internacional**.
+
+### Diagrama del Flujo
+
+> Ver archivo visual de referencia:
+> ![[Pasted image 20260825151755.png]]
+
+### Lo que debería enviar LATAM:
+
+> ![[Pasted image 20260825151910.png]]
+
+### Envío final de LATAM:
+
+> ![[Pasted image 20260825151949.png]]
+
+---
+
+## 📌 Notas
+
+- Este caso aplica solo para comercios que usen **Sabre** como sistema de reservas
+- Las redes involucradas son: **Datafast**, **Austro** y **Medianet**
+- La solución está implementada a nivel de **P2P** (conversión automática)
+- **Relacionado:** [[PRODUCTOS/Dispersión/DISPERSIÓN _1|Dispersión]], [[PRODUCTOS/API/API|API]]

@@ -1,107 +1,166 @@
-En este caso vemos de manera el fljo de este comercio.
+# 🛍️ API Consumo — Caso Fybecca
 
-Hay un nuevo protocolo 3RI, se esta haciendo al validacionde seguridadl la cual es transparente de cara al usuario .
+> [!INFO] Caso de estudio
+> Análisis del flujo de integración API del comercio **Fybecca**. Incluye el nuevo protocolo **3RI** y los flujos de tokenización.
 
-Este metodo funciona bajo el flujo donde agrega una tarjeta o solo cuando el comercio quiere tener la tarjeta alli para una recurencia, (puede ser a mes vencido o cobro inmediato, depende del comercio)
-hay comercios que dan meses de cortesia eso aplicaria a mes vencido yo tokenizo el dia de hoy pero el cobro empieza luego de la cortesia pero ya existio una validacion de tarjeta--> BAJO EL MES VENCIDO
+---
 
-COBRO INMEDIARO --> Es mas claro tipo polizas seguros, aplica desde que yo me suscribo, enotnces a nivel de tokenizciones 
-PAGO ON CLICK y Recurrecnias ( en este es a caso recurrente periodico, loque camvia es la periocidad del pago)
+## 🔑 Contexto
 
+- **Fybecca** es un comercio que tiene la opción de guardar tarjeta para mantener la misma experiencia de usuario
+- Se está implementando el nuevo protocolo **3RI** (validación de seguridad transparente de cara al usuario)
+- Este método funciona bajo el flujo donde se agrega una tarjeta o cuando el comercio quiere tener la tarjeta para una recurrencia
 
-EN ESTE CASO. tiene dos distinciones 
+---
+
+## 📋 Tipos de Recurrencia
+
+| Tipo | Descripción |
+|------|-------------|
+| **Mes vencido** | Tokenizo hoy pero el cobro empieza después (ej: meses de cortesía) |
+| **Cobro inmediato** | Más claro, tipo pólizas/seguros — aplica desde que el usuario se suscribe |
+
+> **Relacionado:** [[PRODUCTOS/PAGO ONCLICK/Pago On click|Pago On Click]], [[PRODUCTOS/Suscripción/Suscripción|Suscripción]]
+
+---
+
+## 🔄 Flujo 1 — Checkout con Guardado de Tarjeta
+
+A nivel del checkout se puede guardar la tarjeta.
+
+> [!IMPORTANT]
+> Para mostrar las cuotas, el comercio en el `information` debe enviar un **payment** para que se muestren los créditos.
+
 ![[Pasted image 20260821101701.png]]
 
 ![[Pasted image 20260821101706.png]]
 
-Aqui vemos  para hacer el flujo 
+### Configuración del flujo
+
 ![[Pasted image 20260821101721.png]]
 
--------
+### Con payment vs sin payment
 
-1RO FLUJO :
- A nivel del checkout puedo guardar la tarjeta 
- Aqui hay que modificar la trama para que me muestre las cuotas, el comuercio en el information debe enviarle un payment para que me muestre los creditos 
- ![[Pasted image 20260821102229.png]]
- En este caso es un  si yo cambio a suscription 
- No nos va a mostrar uuna informacion de cuotas: 
- ![[Pasted image 20260821102251.png]]
-cuando pongo payment alli si tengo cuetoas.
+**Sin payment** (suscripción) — no muestra cuotas:
+![[Pasted image 20260821102251.png]]
 
-CUANDO ES OTP lo puedo hacer de cualquier de las dos formas.
-es necesario qeu se envie el payment para mostrar los tipos de credito.
-y corrsponderia el interescalculation
+**Con payment** — muestra cuotas y créditos:
+![[Pasted image 20260821102229.png]]
 
-generamos el OTP ---> luego mandamos el objeto otp generate en la validacion(pero enel diagrma yo no valido9 rompe los flujos, siempre en los fjos de pago de suscripcion nunca se valdia por el OTP validate, se hace en el mismo tkenaicen del 3DS, ese endpoint cumple la funcion de validad la seguridad de la tarjeta si hubo 3ds u otp, aqui nos dice si la tarjeta es correcta o no )
+---
 
-muy importante que a la generacion del OTP antener la misma referencia
+## 🔐 Flujo OTP
+
+Cuando es **OTP** se puede hacer de cualquiera de las dos formas.
+
+> [!WARNING]
+> Es necesario que se envíe el `payment` para mostrar los tipos de crédito, y correspondería el `interestCalculation`.
+
+### Generación de OTP → Tokenización
+
+1. Generamos el OTP
+2. Mandamos el objeto `otp generate` en la validación
+3. El `tokenize` de 3DS cumple la función de validar la seguridad de la tarjeta
+
+> [!NOTE]
+> En los flujos de pago de suscripción, el OTP **nunca** se valida bajo `OTP validate`, sino bajo el `tokenize` de 3DS.
+
 ![[Pasted image 20260821102948.png]]
-error da cuando mando mal el otp 
+
+Error cuando se envía mal el OTP:
 ![[Pasted image 20260821103001.png]]
 
-aqui es donde se rompe el codigo del comercio, dado el nivel de mensajeria ya que no revisan este escenario, y si el comercio restringe  ya qeu no tengo un intrment, esto lo verificamos a nivel de certigficacioN.
+> [!WARNING]
+> Aquí es donde se rompe el código del comercio, dado el nivel de mensajería ya que no revisan este escenario. Si el comercio restringe y no tiene un `instrument`, esto lo verificamos a nivel de certificación.
 
+---
 
-----------
+## 🔄 Flujo 2 — Agregar Nuevas Tarjetas (desde "Mis Tarjetas")
 
-2DO FLUJO: desde mis tarjetas tengo la posubuilicsd de agregar nuevas tarjetas
-Aqui es necesrio un cobro minimo de 1$ y se reversa.
+Desde "Mis tarjetas" se tiene la posibilidad de agregar nuevas tarjetas.
+
+> [!IMPORTANT]
+> Se requiere un cobro mínimo de **$1** que se reversa.
+
 ![[Pasted image 20260821102040.png]]
 
-Se hace la validación por el otp o 3ds, este seria el flujo ideal para una tokenizacion.
+Se hace la validación por OTP o 3DS — este sería el flujo ideal para una **tokenización**.
 
-Aqui todo lo valida desde la suscripcion sin el monto: 
 ![[Pasted image 20260824084735.png]]
 
-aqui en donde el objeto suscription sellava toda la trazabilidad
+> El objeto `subscription` sella toda la trazabilidad.
 
---------
-Otro flujo es  mostrar las cuotas: 
+---
+
+## 📊 Flujo 3 — Mostrar Cuotas
+
 ![[Pasted image 20260824084815.png]]
 
-Si o si debo enviar el payment y usar el information 
+> [!IMPORTANT]
+> Si o si debo enviar el `payment` y usar el `information`.
+
 ![[Pasted image 20260824084927.png]]
 
-Eso lo hago para ver las cuota, aqui lo puedo hacer mediante  una suscripcion  (MANTENER LA MISMA REFERENCIA)
+Esto se hace para ver las cuotas, y se puede hacer mediante una suscripción:
 ![[Pasted image 20260824085106.png]]
 
-Resulta que a nivel de flujo  tenemos varias formas de ocuparlo Con el otp generado -(lo estamos haciendo como suscripcion)
+> **MANTENER LA MISMA REFERENCIA** en todo el flujo.
 
-otp generate (simpre en los flujos de pago de suscripción el otp nunca se valida bajo el OTP validate, sino bajo el tokenize de 3ds, cumple la funcion de validar la seguridad de la tarjeta), esto nos va decir si es correcta o no .
+---
 
- -----------
-Como identificamos una transaccion de tokenizacion 
+## 🔍 Identificación de Tokenización
+
 ![[Pasted image 20260824092659.png]]
-Este atributo a nivel de pago es un tokenizationID con la cual podemos ver su se envio el cvv o no 
-como se envio me da una Y 
 
-CON CVV
+| Campo | Significado |
+|-------|-------------|
+| `tokenizationID` | Indica si se envió el CVV |
+| **Y** | Se envió CVV |
+| **N** | No se envió CVV |
+
+**Con CVV:**
 ![[Pasted image 20260824092821.png]]
 
-
-SIN CVV
+**Sin CVV:**
 ![[Pasted image 20260824092808.png]]
 
-------
-AHORA PARA UN FLUJO DE 3DS en el caso de FYBECCA lo podemos hacer con el information con el payment, o si no es necesario als cuotas las hacemos solo con el suscripcion.
+---
 
-Desde P2P recomendamos que el flujo de pago se haga con una transaccion de 3DS NPA (No payment  Autenticacion)
+## 🔐 Flujo 3DS en Fybecca
 
-importante: esto tiene un gran indice de DECLINACION, dado que los bancos  restringen esto.
-Lo que debemos hacer es enviar como un flujo normal con un monto.
+Para un flujo de 3DS en Fybecca se puede hacer:
+- Con `information` + `payment` (si se necesitan cuotas)
+- Solo con `subscription` (si no se necesitan cuotas)
+
+> [!TIP] Recomendación P2P
+> Desde P2P se recomienda que el flujo de pago se haga con una transacción de **3DS NPA (No Payment Autenticación)**.
+
+> [!WARNING]
+> Esto tiene un gran índice de **DECLINACIÓN** dado que los bancos restringen esto. Lo que debemos hacer es enviar como un flujo normal con un monto.
+
 ![[Pasted image 20260824093145.png]]
 
-
-luego que el usuario se autentica seguimos la trasabilidad y srguimos el flujo 
+### Flujo post-autenticación
 
 ![[Pasted image 20260824093938.png]]
 
+> En el `payment` debemos enviar la dispersión para ver quién es el responsable de la autenticación de 3DS.
 
-en el payment debemos enviar el dispersión para ver quien es el responsable de la autenticación de 3DS.
+---
 
-.... RECOMENDACION LOS EJEMPLOS DE LA COLECCION DE POSTMAN  estan mas centralizados para un mejor entendimiento de los comercios.
+## 📚 Recomendación
 
+> [!TIP]
+> Los ejemplos de la colección de **Postman** están más centralizados para un mejor entendimiento de los comercios.
 
+---
 
+## 🔗 Documentación Relacionada
 
-
+| Documento | Enlace |
+|-----------|--------|
+| API principal | [[PRODUCTOS/API/API]] |
+| Consumo API | [[PRODUCTOS/API/Consumo API]] |
+| Pago OnClick | [[PRODUCTOS/PAGO ONCLICK/Pago On click]] |
+| Suscripción | [[PRODUCTOS/Suscripción/Suscripción]] |
+| Autenticación | [[Autenticación]] |

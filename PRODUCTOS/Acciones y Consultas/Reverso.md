@@ -26,9 +26,30 @@ El **Reverso** permite anular una transacción **antes del cierre**, liberando l
 
 ---
 
-## ⚙️ Integración
+## ⚙️ Restricciones por Red
 
-> 📖 *Consultar documentación oficial para el endpoint específico de reverso.*
+> [!WARNING]
+> Los reversos se pueden hacer **solo mediante el dashboard de PlacetoPay** o el consumo del API.
+
+| Red | Reverso | Reembolso |
+|-----|---------|-----------|
+| **Austro** | ❌ No disponible | ❌ No disponible |
+| **Bolivariano** | ❌ No disponible | — |
+| **Medianet / Produbanco** | ✅ Disponible | ✅ Disponible |
+| **Otras redes** | ✅ Disponible hasta las 7pm | — |
+
+> [!NOTE]
+> Los reversos hay para todas las redes **menos Austro**.
+> Los reembolsos son solo para **Medianet** y **Produbanco**.
+
+---
+
+## 🔗 Diferencia con Cancelación
+
+| Aspecto | Reverso | [[PRODUCTOS/Acciones y Consultas/Cancelación de Sesión\|Cancelación]] |
+|---------|---------|----------------------|
+| **Momento** | Después de aprobado (antes del cierre) | Antes de que se complete el pago |
+| **Tipo de txn** | Preautorizaciones aprobadas | Sesiones pendientes |
 
 ---
 
@@ -39,13 +60,4 @@ El **Reverso** permite anular una transacción **antes del cierre**, liberando l
 | **Preautorización** | Reserva de fondos | [[PRODUCTOS/Suscripción/Preautorización\|Ver más]] |
 | **Cancelación** | Cancelar sesión antes del pago | [[PRODUCTOS/Acciones y Consultas/Cancelación de Sesión\|Ver más]] |
 | **Reportería** | Consultar historial | [[PRODUCTOS/Acciones y Consultas/Reportería\|Ver más]] |
-SOLO PODEMOS HACER REVERSOS MEDIANTE EL DASHBOARD DE PLACETOPAY O EL CONSUMO DEL API CUANDO
-
-Los reversos hay para todas las redes menos Austro
-
-Los reembolsos si son solo para Medianet Produbanco
-
-
-EN BOLIVARIANO  no podemos hacer reversos tampoco
-
-Los demas los reversos se lo puede hacer hasta las 7pm.
+| **Reembolso** | Devolución de un pago aprobado | [[PRODUCTOS/Acciones y Consultas/Reembolso\|Ver más]] |

@@ -4,79 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "71ffcfc49a721bdd",
+        "id": "8ff5e53badb83524",
         "type": "tabs",
         "children": [
           {
-            "id": "be8866f25b671f9d",
+            "id": "c076f152284d5903",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API.md",
+                "file": "DISPERSION EN API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PREAUTORIZACION API"
-            }
-          },
-          {
-            "id": "94453a140bf77f39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TIPOS DE PRODUCTOS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TIPOS DE PRODUCTOS"
-            }
-          },
-          {
-            "id": "5ba0cc2798550a93",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Checklist_WC_pago_basico_2026"
-            }
-          },
-          {
-            "id": "3289fe16c6b182e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LINK DE PAGOS AUTOMATIZAZOS"
-            }
-          },
-          {
-            "id": "235f6e1663782c20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DISPERSION MODIFICADORES DE PAGO"
+              "title": "DISPERSION EN API"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.1603202819824
+    "width": 321.1603202819824,
+    "collapsed": true
   },
   "right": {
     "id": "c926d80319570928",
@@ -252,47 +198,48 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ec8c1dda89510fe",
+  "active": "c076f152284d5903",
   "lastOpenFiles": [
+    "Recursos/assets/Pasted image 20260831110352.png",
+    "Recursos/assets/Pasted image 20260831110342.png",
+    "Recursos/assets/Pasted image 20260831110335.png",
+    "DISPERSION EN API.md",
+    "PRODUCTOS/API/Consumo API.md",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
+    "SDK BENDO  para comparar flujo con P2P.md",
+    "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
+    "PRODUCTOS/API/API.md",
+    "SEGUNDO CEREBRO.md",
+    "PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API.md",
+    "Enlaces Principales.base",
+    "SEGUNDO CEREBRO..md",
+    "Sin título 1.md",
+    "Recursos/assets/Pasted image 20260828110742.png",
+    "Recursos/assets/Pasted image 20260828110712.png",
+    "Recursos/assets/Pasted image 20260828110644.png",
+    "Recursos/assets/Pasted image 20260828110623.png",
+    "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO",
     "latam caso.md",
     "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
-    "Sin título 1.md",
-    "Sin título.base",
     "TIPOS DE PRODUCTOS.md",
     "Sitios de DLOCAL.md",
-    "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
     "Recursos/assets/Pasted image 20260827105603.png",
     "Recursos/assets/Pasted image 20260827105457.png",
     "Recursos/assets/Pasted image 20260827105331.png",
     "Recursos/assets/Pasted image 20260827105329.png",
-    "Recursos/assets/Pasted image 20260827105245.png",
-    "Recursos/assets/Pasted image 20260827105206.png",
-    "Recursos/assets/Pasted image 20260827105036.png",
-    "Recursos/assets/Pasted image 20260827104910.png",
-    "Recursos/assets/Pasted image 20260827104818.png",
-    "Recursos/assets/Pasted image 20260827104808.png",
-    "PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API.md",
     "PRODUCTOS/API/API Consumo caso Fybecca.md",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
-    "PRODUCTOS/API/Consumo API.md",
     "PRODUCTOS/Acciones y Consultas/Cancelación de Sesión.md",
-    "PRODUCTOS/API/API.md",
     "PRODUCTOS/Acciones y Consultas/Reportería.md",
     "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "Lista de Contenido.base",
     "DESARROLLOS/Proyecto GYE.md",
-    "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
     "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
     "PRODUCTOS/Dispersión/Dispersión.md",
     "PRODUCTOS/PREAUTORIZACIONES/Reautorizaciones.md",
     "Recursos/documentos/ENDPOINT REPORTERIA.md",
     "General/Autenticación.md",
-    "PRODUCTOS/Suscripción/Suscripción.md",
-    "General/Webhook.md",
-    "General/XAMPP Control.md",
-    "2026-07-22.md",
     "Sin título.canvas",
     "Sin título 1.base",
     "Sin título 1.canvas",
@@ -301,7 +248,6 @@
     "DESARROLLOS",
     "PRODUCTOS/PREAUTORIZACIONES",
     "PRODUCTOS/PAGO ONCLICK",
-    "Recursos/documentos",
-    "PRODUCTOS/CMS/Cerrados"
+    "Recursos/documentos"
   ]
 }
