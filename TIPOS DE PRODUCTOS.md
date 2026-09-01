@@ -7,15 +7,15 @@
 
 ## 📦 Productos API y Pago
 
-| Producto | Tiempo Estimado | Enlace |
-|----------|----------------|--------|
-| **Pago Único** | 3 semanas | [[PRODUCTOS/Pago Único/Pago Único\|Ver más]] |
-| **Suscripción** | 3 a 5 semanas | [[PRODUCTOS/Suscripción/Suscripción\|Ver más]] |
-| **Preautorización** | 3 semanas | [[PRODUCTOS/Suscripción/Preautorización\|Ver más]] |
-| **Dispersión** | 4 a 5 semanas | [[PRODUCTOS/Dispersión/Dispersión\|Ver más]] |
-| **Micrositio** | No depende de nosotros | — |
-| **API** | 6 a 7 semanas | [[PRODUCTOS/API/API\|Ver más]] |
-| **LINK de Pagos API** | En gestión | [[PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS\|Ver más]] |
+| Producto              | Tiempo Estimado        | Enlace                                                                     |
+| --------------------- | ---------------------- | -------------------------------------------------------------------------- |
+| **Pago Único**        | 3 semanas              | [[PRODUCTOS/Pago Único/Pago Único\|Ver más]]                               |
+| **Suscripción**       | 3 a 5 semanas          | [[PRODUCTOS/Suscripción/Suscripción\|Ver más]]                             |
+| **Preautorización**   | 3 semanas              | [[PRODUCTOS/Suscripción/Preautorización\|Ver más]]                         |
+| **Dispersión**        | 4 a 5 semanas          | [[PRODUCTOS/Dispersión/Dispersión\|Ver más]]                               |
+| **Micrositio**        | No depende de nosotros | —                                                                          |
+| **API**               | 2 a 3 meses            | [[PRODUCTOS/API/API\|Ver más]]                                             |
+| **LINK de Pagos API** | En gestión             | [[PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS\|Ver más]] |
 
 ---
 
