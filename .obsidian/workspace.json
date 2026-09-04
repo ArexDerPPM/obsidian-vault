@@ -11,14 +11,12 @@
             "id": "1dde8fcc832f509e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
-                "mode": "source",
-                "source": false
+                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
               },
-              "icon": "lucide-file",
-              "title": "DISPERSION AEROLINEAS"
+              "icon": "lucide-file-text",
+              "title": "Checklist_WC_pago_basico_2026"
             }
           }
         ]
@@ -199,19 +197,22 @@
   },
   "active": "1dde8fcc832f509e",
   "lastOpenFiles": [
+    "API DISPERSION AEROLINEAS.md",
+    "Recursos/assets/Pasted image 20260903103603.png",
+    "Recursos/assets/Pasted image 20260903103453.png",
+    "DISPERSION EN API.md",
+    "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
+    "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
     "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
-    "dfdfdf.md",
     "TIPOS DE PRODUCTOS.md",
     "PRODUCTOS/Pago Único/Pago Único.md",
-    "DISPERSION EN API.md",
     "Recursos/assets/Pasted image 20260831110352.png",
     "Recursos/assets/Pasted image 20260831110342.png",
     "Recursos/assets/Pasted image 20260831110335.png",
     "PRODUCTOS/API/Consumo API.md",
     "SDK BENDO  para comparar flujo con P2P.md",
-    "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
     "PRODUCTOS/API/API.md",
     "SEGUNDO CEREBRO.md",
     "PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API.md",
@@ -224,11 +225,8 @@
     "Recursos/assets/Pasted image 20260828110623.png",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO",
     "latam caso.md",
-    "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "Sitios de DLOCAL.md",
     "Recursos/assets/Pasted image 20260827105603.png",
-    "Recursos/assets/Pasted image 20260827105457.png",
-    "Recursos/assets/Pasted image 20260827105331.png",
     "PRODUCTOS/API/API Consumo caso Fybecca.md",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
     "PRODUCTOS/Acciones y Consultas/Cancelación de Sesión.md",
