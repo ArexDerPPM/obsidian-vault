@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Autenticaci",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,12 +197,12 @@
   },
   "active": "1dde8fcc832f509e",
   "lastOpenFiles": [
+    "DISPERSION EN API.md",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "API DISPERSION AEROLINEAS.md",
     "Recursos/assets/Pasted image 20260903103603.png",
     "Recursos/assets/Pasted image 20260903103453.png",
-    "DISPERSION EN API.md",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
     "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
