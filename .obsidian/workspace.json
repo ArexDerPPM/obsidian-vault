@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "206f568c8c59be76",
+        "id": "97cf43966c332358",
         "type": "tabs",
         "children": [
           {
-            "id": "1dde8fcc832f509e",
+            "id": "3b8d95513db4eded",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "produbanco",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.1603202819824
+    "width": 321.1603202819824,
+    "collapsed": true
   },
   "right": {
     "id": "c926d80319570928",
@@ -195,17 +196,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1dde8fcc832f509e",
+  "active": "3b8d95513db4eded",
   "lastOpenFiles": [
-    "DISPERSION EN API.md",
+    "PRODUCTOS/Acciones y Consultas/Reembolso.md",
+    "PRODUCTOS/Acciones y Consultas/Reportería.md",
+    "PRODUCTOS/Acciones y Consultas/Reverso.md",
+    "PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API.md",
+    "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
+    "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
+    "📋 Índice.md",
     "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
+    "DISPERSION EN API.md",
     "API DISPERSION AEROLINEAS.md",
     "Recursos/assets/Pasted image 20260903103603.png",
     "Recursos/assets/Pasted image 20260903103453.png",
-    "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
     "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
-    "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
     "TIPOS DE PRODUCTOS.md",
     "PRODUCTOS/Pago Único/Pago Único.md",
     "Recursos/assets/Pasted image 20260831110352.png",
@@ -215,7 +221,6 @@
     "SDK BENDO  para comparar flujo con P2P.md",
     "PRODUCTOS/API/API.md",
     "SEGUNDO CEREBRO.md",
-    "PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API.md",
     "Enlaces Principales.base",
     "SEGUNDO CEREBRO..md",
     "Sin título 1.md",
@@ -228,10 +233,7 @@
     "Sitios de DLOCAL.md",
     "Recursos/assets/Pasted image 20260827105603.png",
     "PRODUCTOS/API/API Consumo caso Fybecca.md",
-    "PRODUCTOS/Acciones y Consultas/Reverso.md",
     "PRODUCTOS/Acciones y Consultas/Cancelación de Sesión.md",
-    "PRODUCTOS/Acciones y Consultas/Reportería.md",
-    "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "Lista de Contenido.base",
     "DESARROLLOS/Proyecto GYE.md",
     "PRODUCTOS/Dispersión/Dispersión.md",
