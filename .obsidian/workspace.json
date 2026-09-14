@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "97cf43966c332358",
+        "id": "675e0c5f719e84b5",
         "type": "tabs",
         "children": [
           {
-            "id": "3b8d95513db4eded",
+            "id": "13e2abefbcd843ed",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
+                "file": "CARD RETURN.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Checklist_WC_pago_basico_2026"
+              "icon": "lucide-file",
+              "title": "CARD RETURN"
             }
           }
         ]
@@ -196,8 +198,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b8d95513db4eded",
+  "active": "13e2abefbcd843ed",
   "lastOpenFiles": [
+    "Recursos/assets/Pasted image 20260911102952.png",
+    "Recursos/assets/Pasted image 20260911102948.png",
+    "Recursos/assets/Pasted image 20260911102927.png",
+    "Recursos/assets/Pasted image 20260911102914.png",
+    "Recursos/assets/Pasted image 20260911102832.png",
+    "Recursos/assets/Pasted image 20260911102718.png",
+    "Recursos/assets/Pasted image 20260911102242.png",
+    "Recursos/assets/Pasted image 20260911101933.png",
+    "Recursos/assets/Pasted image 20260911101841.png",
+    "Recursos/assets/Pasted image 20260911101640.png",
+    "Recursos/assets/Pasted image 20260911101600.png",
+    "CARD RETURN.md",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "PRODUCTOS/Acciones y Consultas/Reportería.md",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
@@ -205,18 +220,12 @@
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
     "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
     "📋 Índice.md",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "DISPERSION EN API.md",
     "API DISPERSION AEROLINEAS.md",
-    "Recursos/assets/Pasted image 20260903103603.png",
-    "Recursos/assets/Pasted image 20260903103453.png",
     "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
     "TIPOS DE PRODUCTOS.md",
     "PRODUCTOS/Pago Único/Pago Único.md",
-    "Recursos/assets/Pasted image 20260831110352.png",
-    "Recursos/assets/Pasted image 20260831110342.png",
-    "Recursos/assets/Pasted image 20260831110335.png",
     "PRODUCTOS/API/Consumo API.md",
     "SDK BENDO  para comparar flujo con P2P.md",
     "PRODUCTOS/API/API.md",
@@ -224,20 +233,13 @@
     "Enlaces Principales.base",
     "SEGUNDO CEREBRO..md",
     "Sin título 1.md",
-    "Recursos/assets/Pasted image 20260828110742.png",
-    "Recursos/assets/Pasted image 20260828110712.png",
-    "Recursos/assets/Pasted image 20260828110644.png",
-    "Recursos/assets/Pasted image 20260828110623.png",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO",
     "latam caso.md",
     "Sitios de DLOCAL.md",
-    "Recursos/assets/Pasted image 20260827105603.png",
     "PRODUCTOS/API/API Consumo caso Fybecca.md",
     "PRODUCTOS/Acciones y Consultas/Cancelación de Sesión.md",
     "Lista de Contenido.base",
     "DESARROLLOS/Proyecto GYE.md",
-    "PRODUCTOS/Dispersión/Dispersión.md",
-    "PRODUCTOS/PREAUTORIZACIONES/Reautorizaciones.md",
     "Sin título.canvas",
     "Sin título 1.base",
     "Sin título 1.canvas",
