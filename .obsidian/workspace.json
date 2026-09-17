@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "675e0c5f719e84b5",
+        "id": "6989b8923191c524",
         "type": "tabs",
         "children": [
           {
-            "id": "13e2abefbcd843ed",
+            "id": "50599e746fd3d68d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CARD RETURN.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "CARD RETURN"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -80,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.1603202819824,
-    "collapsed": true
+    "width": 294.35615158081055
   },
   "right": {
     "id": "c926d80319570928",
@@ -198,8 +193,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "13e2abefbcd843ed",
+  "active": "50599e746fd3d68d",
   "lastOpenFiles": [
+    "CARD RETURN.md",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
+    "PRODUCTOS/CMS/Abiertos/WordPress.md",
+    "FLUJOS DE PEREZA.md",
+    "Recursos/assets/Pasted image 20260914103435.png",
+    "Recursos/assets/Pasted image 20260914102646.png",
     "Recursos/assets/Pasted image 20260911102952.png",
     "Recursos/assets/Pasted image 20260911102948.png",
     "Recursos/assets/Pasted image 20260911102927.png",
@@ -208,11 +209,6 @@
     "Recursos/assets/Pasted image 20260911102718.png",
     "Recursos/assets/Pasted image 20260911102242.png",
     "Recursos/assets/Pasted image 20260911101933.png",
-    "Recursos/assets/Pasted image 20260911101841.png",
-    "Recursos/assets/Pasted image 20260911101640.png",
-    "Recursos/assets/Pasted image 20260911101600.png",
-    "CARD RETURN.md",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "PRODUCTOS/Acciones y Consultas/Reportería.md",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
@@ -237,9 +233,7 @@
     "latam caso.md",
     "Sitios de DLOCAL.md",
     "PRODUCTOS/API/API Consumo caso Fybecca.md",
-    "PRODUCTOS/Acciones y Consultas/Cancelación de Sesión.md",
     "Lista de Contenido.base",
-    "DESARROLLOS/Proyecto GYE.md",
     "Sin título.canvas",
     "Sin título 1.base",
     "Sin título 1.canvas",

@@ -11,9 +11,9 @@ el numero de la tarjeta va asociada  a la emision de un vuelo, en estos flujos s
 
 DIRECTO: En el caso de tarjeta de tercero: la tarjeta del usuario es basicamente cuando va a realizar un proceso de pago normalito. CUnado es con la informacion del usuario
 
-INDIRECTO:  Tendriamos que es con una tarjeta corporativa no es necesaria este metodo.
+INDIRECTO:  Tendriamos que cuando es con una tarjeta corporativa no es necesaria este método.
 
-ESTO. esim portante para los flujos de dispersion, se lo habilita de la siguiente forma 
+ESTO. es importante para los flujos de dispersión, se lo habilita de la siguiente forma 
 
 ![[Pasted image 20260911101538.png]]
 
