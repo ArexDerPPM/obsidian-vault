@@ -107,3 +107,12 @@ Tarifa reducida
 Tarifa estandar  y su configuración
 ![[Recursos/assets/Pasted image 20260729123954.png|1204]]
 
+---------------------
+PARA ENTRAR A MODO DEBUG  y ver la notificacion y el CRON.
+
+https://placetopay.dev/plugins/woocommerce
+
+https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
+
+![[Pasted image 20260921162540.png]]
+
