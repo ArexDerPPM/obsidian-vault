@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6989b8923191c524",
+        "id": "1ceb4b4ce03003e2",
         "type": "tabs",
         "children": [
           {
-            "id": "50599e746fd3d68d",
+            "id": "5575ba883ed8b72c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Checklist_WC_pago_basico_2026"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -195,11 +193,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50599e746fd3d68d",
+  "active": "5575ba883ed8b72c",
   "lastOpenFiles": [
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "Recursos/assets/Pasted image 20260921162540.png",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "CARD RETURN.md",
     "FLUJOS DE PEREZA.md",
     "Recursos/assets/Pasted image 20260914103435.png",
