@@ -11,10 +11,12 @@
             "id": "5575ba883ed8b72c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "type": "pdf",
+              "state": {
+                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Checklist_WC_pago_basico_2026"
             }
           }
         ]
