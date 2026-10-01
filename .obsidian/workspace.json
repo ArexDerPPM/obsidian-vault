@@ -11,12 +11,14 @@
             "id": "5575ba883ed8b72c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
+                "file": "PRODUCTOS/CMS/Cerrados/VTEX.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Checklist_WC_pago_basico_2026"
+              "icon": "lucide-file",
+              "title": "VTEX"
             }
           }
         ]
