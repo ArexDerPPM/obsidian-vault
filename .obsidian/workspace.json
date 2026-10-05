@@ -11,14 +11,12 @@
             "id": "5575ba883ed8b72c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "PRODUCTOS/CMS/Cerrados/VTEX.md",
-                "mode": "source",
-                "source": false
+                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
               },
-              "icon": "lucide-file",
-              "title": "VTEX"
+              "icon": "lucide-file-text",
+              "title": "Checklist_WC_pago_basico_2026"
             }
           }
         ]
@@ -199,6 +197,7 @@
   },
   "active": "5575ba883ed8b72c",
   "lastOpenFiles": [
+    "PRODUCTOS/CMS/Cerrados/VTEX.md",
     "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "Recursos/assets/Pasted image 20260921162540.png",
