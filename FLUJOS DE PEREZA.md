@@ -2,8 +2,8 @@
 MICROSITIO CREACION 
 ![[Pasted image 20260914102646.png]]
 
-Hat 3 tipos de micrositio:
-1.-cerrado: Se le da al usuario la opcion de funcionar con orden de pago /donde el usuario puede pagar mediante una orden de pago de cierta forma el sitio personalizado es lo mismo. como cuando pagamos la matricula vehicualr en eCUADRO(TURNO DE LICENCIA)
+HaY 3 tipos de micrositio:
+1.-cerrado: Se le da al usuario la opcion de funcionar con orden de pago /donde el usuario puede pagar mediante una orden de pago de cierta forma el sitio personalizado es lo mismo. como cuando pagamos la matricula vehicualr en ecuador(TURNO DE LICENCIA)
 2.-abierto: Aquí el usuario entra a seleccionar lo que va a comprar y va a pagar.
 3.-personalizado (1 o 2 campos)
 
