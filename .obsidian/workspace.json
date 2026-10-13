@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FLUJOS DE PEREZA.md",
+                "file": "PRODUCTOS/FLUJOS DE MICROSITIO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FLUJOS DE PEREZA"
+              "title": "FLUJOS DE MICROSITIO"
             }
           }
         ]
@@ -76,8 +76,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -200,12 +199,17 @@
   },
   "active": "5575ba883ed8b72c",
   "lastOpenFiles": [
+    "Recursos/assets/Pasted image 20261012093010.png",
+    "Recursos/assets/Pasted image 20261012092935.png",
+    "Recursos/assets/Pasted image 20261012091301.png",
+    "DISPERSION EN API.md",
+    "PRODUCTOS/Dispersión/API DISPERSION AEROLINEAS.md",
+    "PRODUCTOS/FLUJOS DE MICROSITIO.md",
     "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/CMS/Cerrados/VTEX.md",
     "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "Recursos/assets/Pasted image 20260921162540.png",
     "CARD RETURN.md",
-    "FLUJOS DE PEREZA.md",
     "Recursos/assets/Pasted image 20260914103435.png",
     "Recursos/assets/Pasted image 20260914102646.png",
     "Recursos/assets/Pasted image 20260911102952.png",
@@ -213,8 +217,6 @@
     "Recursos/assets/Pasted image 20260911102927.png",
     "Recursos/assets/Pasted image 20260911102914.png",
     "Recursos/assets/Pasted image 20260911102832.png",
-    "Recursos/assets/Pasted image 20260911102718.png",
-    "Recursos/assets/Pasted image 20260911102242.png",
     "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "PRODUCTOS/Acciones y Consultas/Reportería.md",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
@@ -222,8 +224,6 @@
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
     "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
     "📋 Índice.md",
-    "DISPERSION EN API.md",
-    "API DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
     "TIPOS DE PRODUCTOS.md",
