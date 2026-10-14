@@ -11,14 +11,12 @@
             "id": "5575ba883ed8b72c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "PRODUCTOS/FLUJOS DE MICROSITIO.md",
-                "mode": "source",
-                "source": false
+                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
               },
-              "icon": "lucide-file",
-              "title": "FLUJOS DE MICROSITIO"
+              "icon": "lucide-file-text",
+              "title": "Checklist_WC_pago_basico_2026"
             }
           }
         ]
@@ -199,12 +197,12 @@
   },
   "active": "5575ba883ed8b72c",
   "lastOpenFiles": [
+    "PRODUCTOS/FLUJOS DE MICROSITIO.md",
     "Recursos/assets/Pasted image 20261012093010.png",
     "Recursos/assets/Pasted image 20261012092935.png",
     "Recursos/assets/Pasted image 20261012091301.png",
     "DISPERSION EN API.md",
     "PRODUCTOS/Dispersión/API DISPERSION AEROLINEAS.md",
-    "PRODUCTOS/FLUJOS DE MICROSITIO.md",
     "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/CMS/Cerrados/VTEX.md",
     "PRODUCTOS/CMS/Abiertos/WordPress.md",
@@ -216,7 +214,6 @@
     "Recursos/assets/Pasted image 20260911102948.png",
     "Recursos/assets/Pasted image 20260911102927.png",
     "Recursos/assets/Pasted image 20260911102914.png",
-    "Recursos/assets/Pasted image 20260911102832.png",
     "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "PRODUCTOS/Acciones y Consultas/Reportería.md",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
