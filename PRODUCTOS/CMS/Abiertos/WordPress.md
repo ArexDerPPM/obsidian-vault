@@ -116,3 +116,24 @@ https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
 
 ![[Pasted image 20260921162540.png]]
 
+OTRAS  NOVEDADES :
+
+Visualizadas con el comercio de JP Digital 
+
+![[Pasted image 20261023125514.png]]
+![[Pasted image 20261023125525.png]]
+
+El problema esta dentro de woocommerce.
+
+el archivo dentro del plugin de placetopay
+![[Pasted image 20261023125602.png]]
+![[Pasted image 20261023125613.png]]
+En la linea 1101
+esta decimal 0, ósea es una suposición que ahí esta el error
+![[Pasted image 20261023125633.png]]
+
+![[Pasted image 20261023125652.png]]
+
+
+con lo cual ya me refleja el cambio de qeu no se visualizaba las decima : 
+8 ----> paso a 8,43.

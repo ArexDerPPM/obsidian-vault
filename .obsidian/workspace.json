@@ -25,12 +25,14 @@
             "id": "43542eb123ec73fa",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
+                "file": "PRODUCTOS/CMS/Abiertos/WordPress.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Checklist_WC_pago_basico_2026"
+              "icon": "lucide-file",
+              "title": "WordPress"
             }
           }
         ],
@@ -212,13 +214,19 @@
   },
   "active": "43542eb123ec73fa",
   "lastOpenFiles": [
+    "Recursos/assets/Pasted image 20261023125652.png",
+    "Recursos/assets/Pasted image 20261023125633.png",
+    "Recursos/assets/Pasted image 20261023125613.png",
+    "Recursos/assets/Pasted image 20261023125602.png",
+    "Recursos/assets/Pasted image 20261023125525.png",
+    "Recursos/assets/Pasted image 20261023125514.png",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
     "TLS DE PLACETOPAY.md",
     "CARD RETURN.md",
     "Lista de Contenido.base",
     "latam caso.md",
     "SDK BENDO  para comparar flujo con P2P.md",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/FLUJOS DE MICROSITIO.md",
     "Recursos/assets/Pasted image 20261012093010.png",
     "Recursos/assets/Pasted image 20261012092935.png",
@@ -229,11 +237,6 @@
     "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "Recursos/assets/Pasted image 20260921162540.png",
     "Recursos/assets/Pasted image 20260914103435.png",
-    "Recursos/assets/Pasted image 20260914102646.png",
-    "Recursos/assets/Pasted image 20260911102952.png",
-    "Recursos/assets/Pasted image 20260911102948.png",
-    "Recursos/assets/Pasted image 20260911102927.png",
-    "Recursos/assets/Pasted image 20260911102914.png",
     "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "PRODUCTOS/Acciones y Consultas/Reportería.md",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
@@ -251,7 +254,6 @@
     "SEGUNDO CEREBRO..md",
     "Sin título 1.md",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO",
-    "Sitios de DLOCAL.md",
     "Sin título.canvas",
     "Sin título 1.base",
     "Sin título 1.canvas",
