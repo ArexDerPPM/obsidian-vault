@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CARD RETURN.md",
+                "file": "TLS DE PLACETOPAY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CARD RETURN"
+              "title": "TLS DE PLACETOPAY"
+            }
+          },
+          {
+            "id": "7686cb98f824dc80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LINK DE PAGOS API.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LINK DE PAGOS API"
             }
           },
           {
@@ -36,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -214,6 +228,20 @@
   },
   "active": "43542eb123ec73fa",
   "lastOpenFiles": [
+    "POLITICAS DE CSP.md",
+    "Recursos/assets/Pasted image 20261026172028.png",
+    "Recursos/assets/Pasted image 20261026172018.png",
+    "LINK DE PAGOS API.md",
+    "TLS DE PLACETOPAY.md",
+    "TIPOS DE PRODUCTOS.md",
+    "Sitios de DLOCAL.md",
+    "Lista de Contenido.base",
+    "SEGUNDO CEREBRO.md",
+    "PRODUCTOS/latam caso.md",
+    "PRODUCTOS/DISPERSION EN API.md",
+    "CARD RETURN.md",
+    "SDK BENDO  para comparar flujo con P2P.md",
+    "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "Recursos/assets/Pasted image 20261023125652.png",
     "Recursos/assets/Pasted image 20261023125633.png",
     "Recursos/assets/Pasted image 20261023125613.png",
@@ -222,21 +250,11 @@
     "Recursos/assets/Pasted image 20261023125514.png",
     "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
-    "TLS DE PLACETOPAY.md",
-    "CARD RETURN.md",
-    "Lista de Contenido.base",
-    "latam caso.md",
-    "SDK BENDO  para comparar flujo con P2P.md",
     "PRODUCTOS/FLUJOS DE MICROSITIO.md",
     "Recursos/assets/Pasted image 20261012093010.png",
     "Recursos/assets/Pasted image 20261012092935.png",
-    "Recursos/assets/Pasted image 20261012091301.png",
-    "DISPERSION EN API.md",
     "PRODUCTOS/Dispersión/API DISPERSION AEROLINEAS.md",
     "PRODUCTOS/CMS/Cerrados/VTEX.md",
-    "PRODUCTOS/CMS/Abiertos/WordPress.md",
-    "Recursos/assets/Pasted image 20260921162540.png",
-    "Recursos/assets/Pasted image 20260914103435.png",
     "PRODUCTOS/Acciones y Consultas/Reembolso.md",
     "PRODUCTOS/Acciones y Consultas/Reportería.md",
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
@@ -245,14 +263,9 @@
     "📋 Índice.md",
     "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
-    "TIPOS DE PRODUCTOS.md",
     "PRODUCTOS/Pago Único/Pago Único.md",
     "PRODUCTOS/API/Consumo API.md",
-    "PRODUCTOS/API/API.md",
-    "SEGUNDO CEREBRO.md",
     "Enlaces Principales.base",
-    "SEGUNDO CEREBRO..md",
-    "Sin título 1.md",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO",
     "Sin título.canvas",
     "Sin título 1.base",

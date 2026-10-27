@@ -137,3 +137,77 @@ esta decimal 0, ósea es una suposición que ahí esta el error
 
 con lo cual ya me refleja el cambio de qeu no se visualizaba las decima : 
 8 ----> paso a 8,43.
+
+
+---------------------
+solucion al pago cuando en productivo sale hubo un error 
+
+1. Error identificado
+
+El sistema generaba el siguiente error fatal de PHP:
+
+PHP Fatal error: Uncaught Error: Call to a member function add() on null
+
+Archivo afectado:
+woocommerce-gateway-placetopay-ecuador/src/GatewayMethodPlacetopayEcuador.php
+
+Línea: 1282, dentro de la función logger().
+
+2. Causa del problema
+
+Al revisar el código fuente, identificamos que en la función configureEnvironment() el objeto $this->logger se inicializaba únicamente cuando el plugin estaba en modo pruebas ($this->testmode === 'yes').
+
+Sin embargo, la función logger() también permite registrar eventos de nivel warning y error en producción.
+
+Cuando Placetopay devolvía una respuesta de pago rechazado, el plugin intentaba registrar el evento mediante $this->logger->add(), pero el objeto no había sido inicializado, provocando el error fatal y la interrupción del proceso de retorno a WooCommerce.
+
+3. Solución implementada
+
+Modificamos la función configureEnvironment() para inicializar el logger de WooCommerce en todos los ambientes, tanto en pruebas como en producción:
+
+$this->logger = self::wooCommerceVersionCompare('2.1')
+    ? new \WC_Logger()
+    : WC()->logger();
+
+Esta inicialización se trasladó fuera de la condición $this->testmode === 'yes'.
+
+Por otro lado, mantuvimos la inicialización de $this->loggerAdapter exclusivamente en modo pruebas, conservando el comportamiento original de integración con el SDK de Placetopay.
+
+4. Resultado de la corrección
+
+Después de aplicar el cambio, realizamos nuevamente la prueba de retorno de una transacción rechazada en producción y confirmamos que el error crítico dejó de presentarse.
+
+La modificación permite registrar los eventos de advertencia y error sin intentar ejecutar métodos sobre un objeto nulo.
+
+5. Recomendación
+
+CON EL SIGUIENTE CAMBIO VEMOS EL PARCHE DEL FLUJO.
+
+
+private function configureEnvironment()
+{
+    $environments = CountryConfig::getEndpoints();
+
+    $nonProductionModes = [Environment::TEST, Environment::DEV, Environment::UAT];
+
+    $this->testmode = in_array($this->enviroment_mode, $nonProductionModes, true) || (defined('WP_DEBUG') && WP_DEBUG)
+        ? 'yes'
+        : 'no';
+
+    // Initialize the logger in all environments.
+    $this->logger = self::wooCommerceVersionCompare('2.1')
+        ? new \WC_Logger()
+        : WC()->logger();
+
+    // Keep the logger adapter only in test mode.
+    if ($this->testmode === 'yes') {
+        $this->loggerAdapter = new WCLoggerAdapter($this->logger, CountryConfig::CLIENT_ID);
+    }
+
+    if ($this->enviroment_mode === Environment::CUSTOM) {
+        $this->uri_service = empty($this->custom_connection_url) ? null : $this->custom_connection_url;
+    } else {
+        $mode = $this->enviroment_mode;
+        $this->uri_service = $environments[$mode] ?? $environments[Environment::TEST] ?? null;
+    }
+}

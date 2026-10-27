@@ -1,4 +1,4 @@
-
+ppppp
 Todos los comercios de PVA si solicitan  van a tener el card-return
 
 les va a agregar en el response un campo que se marca como PAN que es un cifrado a nivel de sitio, ningun otro comercio lo puede solicitar, solo PVA com otal, aunq existen excepciones
