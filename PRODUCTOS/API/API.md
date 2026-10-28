@@ -120,3 +120,4 @@ Verificar en dashboard → Reglas Hours para confirmar que la validación fue ex
 | Webhook | [[General/Webhook]] |
 | Sonda | [[General/Sonda]] |
 | Documentación oficial | [docs.placetopay.dev](https://docs.placetopay.dev/) |
+En este contexto, el mecanismo de **Whitelist de IPs** constituye un control prioritario debido a su simplicidad de implementación y a que no requiere cambios a nivel aplicativo. Entendemos que actualmente las notificaciones se originan desde la IP **3.232.21.91**; sin embargo, agradeceríamos nos puedan confirmar si Place to Pay dispone de un procedimiento formal de notificación cuando se produzcan cambios en las direcciones IP de origen utilizadas para el envío de Webhooks.

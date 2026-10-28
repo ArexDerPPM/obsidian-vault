@@ -11,14 +11,12 @@
             "id": "5575ba883ed8b72c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "TLS DE PLACETOPAY.md",
-                "mode": "source",
-                "source": false
+                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
               },
-              "icon": "lucide-file",
-              "title": "TLS DE PLACETOPAY"
+              "icon": "lucide-file-text",
+              "title": "Checklist_WC_pago_basico_2026"
             }
           },
           {
@@ -49,8 +47,7 @@
               "title": "WordPress"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MICROSITI",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +97,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Marcadores"
             }
@@ -226,13 +226,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "43542eb123ec73fa",
+  "active": "4ec8c1dda89510fe",
   "lastOpenFiles": [
+    "PRODUCTOS/API/API.md",
+    "📋 Índice.md",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
+    "TLS DE PLACETOPAY.md",
+    "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "POLITICAS DE CSP.md",
     "Recursos/assets/Pasted image 20261026172028.png",
     "Recursos/assets/Pasted image 20261026172018.png",
     "LINK DE PAGOS API.md",
-    "TLS DE PLACETOPAY.md",
     "TIPOS DE PRODUCTOS.md",
     "Sitios de DLOCAL.md",
     "Lista de Contenido.base",
@@ -241,14 +245,12 @@
     "PRODUCTOS/DISPERSION EN API.md",
     "CARD RETURN.md",
     "SDK BENDO  para comparar flujo con P2P.md",
-    "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "Recursos/assets/Pasted image 20261023125652.png",
     "Recursos/assets/Pasted image 20261023125633.png",
     "Recursos/assets/Pasted image 20261023125613.png",
     "Recursos/assets/Pasted image 20261023125602.png",
     "Recursos/assets/Pasted image 20261023125525.png",
     "Recursos/assets/Pasted image 20261023125514.png",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO/LINK DE PAGOS AUTOMATIZAZOS.md",
     "PRODUCTOS/FLUJOS DE MICROSITIO.md",
     "Recursos/assets/Pasted image 20261012093010.png",
@@ -260,7 +262,6 @@
     "PRODUCTOS/Acciones y Consultas/Reverso.md",
     "PRODUCTOS/PREAUTORIZACIONES/PREAUTORIZACION API.md",
     "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
-    "📋 Índice.md",
     "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
     "PRODUCTOS/Pago Único/Pago Único.md",
