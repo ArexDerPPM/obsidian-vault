@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "afa1f4b2c0b42fff",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Checklist_WC_pago_basico_2026"
+            }
+          },
+          {
             "id": "7686cb98f824dc80",
             "type": "leaf",
             "state": {
@@ -47,7 +59,8 @@
               "title": "WordPress"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -226,11 +239,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ec8c1dda89510fe",
+  "active": "afa1f4b2c0b42fff",
   "lastOpenFiles": [
+    "GIT HUB EMPRESARIAL.md",
+    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "PRODUCTOS/API/API.md",
     "📋 Índice.md",
-    "Recursos/documentos/Checklist_WC_pago_basico_2026.pdf",
     "TLS DE PLACETOPAY.md",
     "PRODUCTOS/CMS/Abiertos/WordPress.md",
     "POLITICAS DE CSP.md",
@@ -264,8 +278,6 @@
     "PRODUCTOS/Dispersión/DISPERSIÓN _1.md",
     "PRODUCTOS/Dispersión/DISPERSION AEROLINEAS.md",
     "PRODUCTOS/Dispersión/DISPERSION MODIFICADORES DE PAGO.md",
-    "PRODUCTOS/Pago Único/Pago Único.md",
-    "PRODUCTOS/API/Consumo API.md",
     "Enlaces Principales.base",
     "PRODUCTOS/LINK-PAGOS-AUTOMATIZADO",
     "Sin título.canvas",
